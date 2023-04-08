@@ -1,0 +1,212 @@
+﻿
+@font-face {
+    font-family: logoFont;
+    src: url(logoFont.woff);
+}
+
+
+/*
+    For icons
+*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?e22aeh');
+    src: url('fonts/icomoon.eot?e22aeh#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?e22aeh') format('truetype'), url('fonts/icomoon.woff?e22aeh') format('woff'), url('fonts/icomoon.svg?e22aeh#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lock:before {
+    content: "\e900";
+}
+
+.icon-user:before {
+    content: "\e901";
+}
+
+
+
+.background {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideshow 20s infinite linear;
+    width: 100%;
+    height: 100%;
+}
+@keyframes slideshow{
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food.jpg");
+    }
+    35% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food2.jpg");
+    }
+    60% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food3.jpg");
+    }
+    85% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food4.jpg");
+    }
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food5.jpg");
+    }
+}
+.navbar img{
+    position: relative;
+    width: 20%;
+
+}
+.login{
+    width: 250px;
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+.login h1 {
+    font-family: logoFont;
+    font-size: 40px;
+    color: black;
+    border-bottom: solid 6px white;
+    -webkit-text-fill-color: #b32317;
+    -webkit-text-stroke-width: 0.1px;
+}
+
+.signinbtn {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 6px;
+    border-radius: 5px;
+    box-shadow: 0 7px #999;
+    cursor: pointer;
+}
+.signinbtn:active {
+    color: white;
+    background-color: #b32317;
+    transform: translateY(4px);
+    box-shadow: 0 2px #999;
+    border-color: white;
+}
+.textbox input {
+    color: white;
+    float: right;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding-top: 15px;
+    margin-bottom: 6px;
+    border-bottom: solid 2px white;
+    cursor: pointer;
+}
+.textbox span {
+    position: relative;
+    transform: translateY(25px);
+    width: 30px;
+    float: left;
+    color: white;
+}
+
+.registernow h3 {
+    color: white;
+}
+
+.registeration {
+    width: 250px;
+    position: absolute;
+    top: 54%;
+    left: 45%;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+}
+.textbox2 input {
+    color: white;
+    float: right;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px white;
+    cursor: pointer;
+}
+.registeration h1 {
+    font-family: logoFont;
+    font-size: 40px;
+    color: black;
+    border-bottom: solid 6px white;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+}
+#registerbtn {
+    position: absolute;
+    top: 378px;
+    width: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 7px #999;
+    cursor: pointer;
+}
+#registerbtn:active {
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 2px #999;
+    border-color: white;
+}
+#animatedbutton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 7px #999;
+}
+#animatedbutton:hover{
+    cursor: pointer;
+}
+#animatedbutton:active {
+    color: white;
+    background-color: #b32317;
+    transform: translateY(4px);
+    box-shadow: 0 2px #999;
+    border-color: white;
+}
+.checkbox {
+    position: relative;
+    top: 39px;
+    left: 25px;
+}
+.registernow h4{
+    text-align: center;
+    color: white;
+}
+#username_error, #password_error {
+    height: 60px;
+    width: 80%;
+    position: relative;
+    left: 25px;
+    color: black;
+    -webkit-text-fill-color: #C62828;
+    -webkit-text-stroke-width: 0.3px;
+    display: none;
+}
+

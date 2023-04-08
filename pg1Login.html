@@ -1,0 +1,74 @@
+﻿<DOCTYPE! html>
+    <html>
+    <head>
+        <title>Yummy Foods!</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="logo_icon.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".registeration").hide();
+                $("#animatedbutton").click(function () {
+                    $(".login , .registeration").toggle();
+                });
+                $("#registerbtn").click(function () {
+                    $(".registeration, .login").toggle();
+                });
+            });
+        </script>
+        <script>
+            function f() {
+                alert("Registeration Successful! Login Now!");
+            }
+        </script>
+    </head>
+        <body>
+            <div class="background">
+                <div class="navbar">
+                    <img src="logo.png" class="logo" />
+                </div>
+                <div class="registeration">
+                    <h1>Registeration</h1>
+                    <div class="textbox2">
+                        <input type="text" placeholder="First Name" name="" value="" />
+                    </div>
+                    <div class="textbox2">
+                        <input type="text" placeholder="Last Name" name="" value="" />
+                    </div>
+                    <div class="textbox2">
+                        <input type="text" placeholder="Username" name="" value="" />
+                    </div>
+                    <div class="textbox2">
+                        <input type="text" placeholder="Email Address" name="" value="" />
+                    </div>
+                    <div class="textbox2">
+                        <input type="password" placeholder="Password" name="" value="" />
+                    </div>
+                    <div class="textbox2">
+                        <input type="password" placeholder="Confirm Password" name="" value="" />
+                    </div>
+                        <input type="button" id="registerbtn" value="Register" onclick="f()"/>
+                </div>
+                <div class="login" name="form">
+                    <h1>Login: </h1>
+                    <div class="textbox">
+                        <span class="icon-user"></span>
+                        <input type="text" placeholder="Username" name="username" value="" />
+                    </div>
+                    <div id="username_error">Please Enter your Username</div>
+                    <div class="textbox">
+                        <span class="icon-lock"></span>
+                        <input type="password" placeholder="Password" name="password" value="" />
+                    </div>
+                    <div id="password_error">Please Enter The Password</div>
+                    <input class="signinbtn" type="button" value="Sign in" onclick="location.href='pg2Home.html'" />
+                    <div class="registernow">
+                        <input type="checkbox" class="checkbox" />
+                        <h4>Remember Password</h4>
+                        <h3>Not Registered?</h3>
+                        <input type="button" id="animatedbutton" value="Register Now!">
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,892 @@
+﻿@font-face {
+    font-family: logoFont;
+    src: url(logoFont.woff);
+}
+.background {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: slideshow 20s infinite linear;
+    width: 100%;
+    height: 400%;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food.jpg");
+    }
+
+    35% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food2.jpg");
+    }
+
+    60% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food3.jpg");
+    }
+
+    85% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food4.jpg");
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food5.jpg");
+    }
+}
+.logo {
+    position: absolute;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    left: 43%;
+    width: 12%;
+}
+@keyframes move{
+    0% {
+        transform: rotateZ(0deg);
+        left: 0;
+    }
+    60% {
+        transform: rotateZ(200deg);
+        left: 80%;
+        width: 12%;
+    }
+
+    85% {
+        transform: rotateZ(360deg);
+        right: 0;
+        width: 6%;
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+        left: 43%;
+        width: 12%;
+    }
+}
+.navbar h1 {
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 39%;
+}
+.fastfoods {
+    position: relative;
+    top: 10%;
+    text-align: center;
+    font-family: logoFont;
+    font-size: 30px;
+    color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    -webkit-text-fill-color: #b32317;
+    -webkit-text-stroke-width: 1px;
+}
+.desserts {
+    position: relative;
+    top: 15%;
+    text-align: center;
+    font-family: logoFont;
+    font-size: 30px;
+    color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+}
+
+.burgers img{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+    
+}
+.burgers {
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 11.5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+}
+.fries {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 12%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+}
+.fries img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.pizzas {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 12%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+}
+.pizzas img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.noodles {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 12%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+}
+.noodles img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.pasta {
+    margin-top: 65px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 12%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+}
+.pasta img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.shawarma {
+    margin-top: 70px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 12%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #ff0000;
+    -webkit-text-stroke-width: 1px;
+}
+.shawarma img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.Icecream {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 17%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+}
+.Icecream img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.pie {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 17%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+}
+.pie img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.cake {
+    margin-top: 60px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    top: 17%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    font-family: logoFont;
+    font-size: 15px;
+    color: black;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+}
+.cake img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 160px;
+    height: 120px;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("logo.png");
+}
+.bm {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-width: 1px;
+    top: 470px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px red;
+}
+.fr {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-width: 1px;
+    top: 660px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px red;
+}
+.pz {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-width: 1px;
+    top: 850px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px red;
+}
+.ns {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-width: 1px;
+    top: 1040px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px red;
+}
+.pa {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-width: 1px;
+    top: 1230px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px red;
+}
+.shawarmag {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke-width: 1px;
+    top: 1420px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px red;
+}
+.Icecreamg {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+    top: 1900px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px green;
+}
+.pieg {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+    top: 2090px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px green;
+}
+.cakeg {
+    position: absolute;
+    font-family: logoFont;
+    color: black;
+    -webkit-text-fill-color: #54b948;
+    -webkit-text-stroke-width: 1px;
+    top: 2280px;
+    left: 5px;
+    font-size: 35px;
+    border-bottom: solid 2px green;
+}
+.addtocart1 {
+    position: absolute;
+    left: 10%;
+    top: 16.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart2 {
+    position: absolute;
+    left: 28%;
+    top: 16.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart3 {
+    position: absolute;
+    left: 45%;
+    top: 16.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart4 {
+    position: absolute;
+    left: 62%;
+    top: 16.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart5 {
+    position: absolute;
+    left: 9%;
+    top: 21.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart6 {
+    position: absolute;
+    left: 27%;
+    top: 21.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart7 {
+    position: absolute;
+    left: 45.5%;
+    top: 21.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart8 {
+    position: absolute;
+    left: 10%;
+    top: 26.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart9 {
+    position: absolute;
+    left: 33%;
+    top: 26.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart10 {
+    position: absolute;
+    left: 57%;
+    top: 26.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart11 {
+    position: absolute;
+    left: 77%;
+    top: 26.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart12 {
+    position: absolute;
+    left: 10%;
+    top: 32%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart13 {
+    position: absolute;
+    left: 33%;
+    top: 32%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart14 {
+    position: absolute;
+    left: 59%;
+    top: 32%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart15 {
+    position: absolute;
+    left: 90%;
+    top: 32%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart16 {
+    position: absolute;
+    left: 8.5%;
+    top: 36%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart17 {
+    position: absolute;
+    left: 27%;
+    top: 36%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart18 {
+    position: absolute;
+    left: 45%;
+    top: 36%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart19 {
+    position: absolute;
+    left: 63%;
+    top: 36%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart20 {
+    position: absolute;
+    left: 9%;
+    top: 41%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart21 {
+    position: absolute;
+    left: 31%;
+    top: 41%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart22 {
+    position: absolute;
+    left: 32.5%;
+    top: 55%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart23 {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart24 {
+    position: absolute;
+    left: 53%;
+    top: 55%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart25 {
+    position: absolute;
+    left: 72%;
+    top: 55%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart26 {
+    position: absolute;
+    left: 90%;
+    top: 55%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart27 {
+    position: absolute;
+    left: 70%;
+    top: 59%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart28 {
+    position: absolute;
+    left: 51%;
+    top: 60%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart29 {
+    position: absolute;
+    left: 35.5%;
+    top: 59%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart30 {
+    position: absolute;
+    left: 10%;
+    top: 59%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart31 {
+    position: absolute;
+    left: 10%;
+    top: 63.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart32 {
+    position: absolute;
+    left: 36%;
+    top: 63.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.addtocart33 {
+    position: absolute;
+    left: 65%;
+    top: 63.5%;
+    width: 8%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+}
+.gotocart {
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    width: 20%;
+    height: 3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: #54b948;
+    transform: translateY(4px);
+    box-shadow: 0 6px #999;
+    border-color: white;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.gotocart:hover{
+    background-color: #b32317;
+    color: white;
+}
+.gotocart:active{
+    background-color: #b32317;
+    transform: translateY(10px);
+    box-shadow: 0 2px #999;
+    color: white;
+}

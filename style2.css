@@ -1,0 +1,263 @@
+﻿@font-face {
+    font-family: logoFont;
+    src: url(logoFont.woff);
+}
+
+.background {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideshow 20s infinite linear;
+    width: 100%;
+    height: 100%;
+}
+@keyframes slideshow {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food.jpg");
+    }
+
+    35% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food2.jpg");
+    }
+
+    60% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food3.jpg");
+    }
+
+    85% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food4.jpg");
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg food5.jpg");
+    }
+}
+
+.logo {
+    position: absolute;
+    width: 20%;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes move{
+    0% {
+        transform: rotateZ(0deg);
+        left: 0;
+    }
+    60% {
+        transform: rotateZ(200deg);
+        left: 80%;
+        width: 12%;
+    }
+
+    85% {
+        transform: rotateZ(360deg);
+        right: 0;
+        width: 6%;
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+        left: 43%;
+        width: 12%;
+    }
+}
+
+.noodle {
+    width: 6%;
+    right: -10%;
+    position: absolute;
+    animation-name: noodle;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.fries {
+    width: 4%;
+    right: -10%;
+    position: absolute;
+    animation-name: fries;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.burger {
+    width: 6%;
+    right: -10%;
+    position: absolute;
+    animation-name: burger;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+.pizza {
+    width: 6%;
+    right: -10%;
+    position: absolute;
+    animation-name: pizza;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes noodle{
+    0% {
+        opacity: 0;
+        top: 20%;
+        right: -10%;
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(1080deg);
+        top: 20%;
+        right: 105%;
+    }
+}
+@keyframes fries {
+    0% {
+        opacity: 0;
+        top: 40%;
+        right: -10%;
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(1080deg);
+        top: 40%;
+        right: 105%;
+    }
+}
+@keyframes burger {
+    0% {
+        opacity: 0;
+        top: 60%;
+        transform: rotateZ(0deg);
+        right: -10%;
+    }
+
+    100% {
+        transform: rotateZ(-1080deg);
+        top: 60%;
+        right: 105%;
+    }
+}
+@keyframes pizza {
+    0% {
+        opacity: 0;
+        top: 80%;
+        transform: rotateZ(0deg);
+        right: -10%;
+    }
+
+    100% {
+        transform: rotateZ(-1080deg);
+        right: 105%;
+        top: 80%;
+    }
+}
+.inside{
+    transform: translateY(200px);
+    text-align: center;
+    color: white;
+}
+.inside h1{
+    transform: translateX(650px);
+    width: 30%;
+    border-bottom: 2px solid white;
+}
+.inside span{
+    font-family: logoFont;
+    font-size: 40px;
+    color: black;
+    -webkit-text-fill-color: #b32317;
+    -webkit-text-stroke-width: 1px;
+}
+.list {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 43%;
+    left: 44%;
+}
+.gomessage{
+    position: absolute;
+    top: 70%;
+    left: -60%;
+    color: white;
+    font-size: 20px;
+    animation-name: message;
+    animation-duration: 1s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes message{
+    0%{
+        left: -60%;
+        top: 70%;
+    }
+    100%{
+        left: 26%;
+        top: 70%;
+    }
+}
+.btn {
+    color: white;
+    float: left;
+    width: 10%;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    box-shadow: 0 7px #999;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn input:hover{
+    background-color: #b32317;
+    color: white;
+}
+.btn input:active{
+    background-color: #54b948;
+    transform: translateY(10px);
+    box-shadow: 0 2px #999;
+    color: white;
+}
+.btn input{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+.btn2 {
+    position: relative;
+    float: left;
+    top: -6px;
+    color: white;
+    width: 10%;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    box-shadow: 0 7px #999;
+    border-radius: 5px;
+}
+.btn2 input:hover {
+    background-color: #54b948;
+    color: white;
+}
+.btn2 input:active {
+    background-color: #b32317;
+    transform: translateY(10px);
+    box-shadow: 0 2px #999;
+    color: white;
+}
+.btn2 input {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}

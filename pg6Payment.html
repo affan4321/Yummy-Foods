@@ -1,0 +1,110 @@
+﻿<DOCTYPE! html>
+
+    <html>
+    <head>
+        <title>Yummy Foods!</title>
+        <link rel="stylesheet" href="style6.css" />
+        <link rel="shortcut icon" href="logo_icon.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".part2").hide();
+                $(".proceed").click(function () {
+                    $(".part1 , .part2").toggle();
+                });
+            });
+        </script>
+        <script>
+            function f() {
+                alert("Order Noted! Thankyou for trusting and buying from our website!");
+            }
+
+/**/</script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navbar">
+                <img src="logo.png" class="logo" />
+            </div>
+            <form class="form1">
+                <div class="part1">
+                    <h1>Payment</h1>
+                    <h2 class="msg">Payment Options:</h2>
+                    <h2 class="prc">Total: $1877</h2>
+                    <h3>American Express</h3><input type="checkbox" class="checkbox1" />
+                    <h3>Master Card</h3><input type="checkbox" class="checkbox2" />
+                    <h3>Visa</h3><input type="checkbox" class="checkbox3" />
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                    <button type="button" class="proceed">Proceed</button>
+                </div>
+                <div class="part2">
+                    <h1>Payment Details</h1>
+                    <div class="inputfield">
+                        <h2 class="prc">Total: $1877</h2>
+                        <div class="line1">
+                            <h3 class="nmh3">Name: </h3><input type="text" placeholder="Name" class="name" />
+                            <h3>Contact Number: </h3><input type="text" placeholder="(- - - -) - - - - - - -" class="num" />
+                            <h3>Email: </h3><input type="email" placeholder="Email" class="email" />
+                        </div>
+                        <div class="line2">
+                            <h3>Shipping Address: </h3><input type="text" placeholder="Address" class="address" />
+                        </div>
+                        <div class="line3">
+                            <h3>Card Number: </h3><input type="text" placeholder="Card Number" class="cardnum" />
+                            <h3>Expiration Date: </h3>
+                            <select class="day">
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                            </select>
+                            <select class="month">
+                                <option selected>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                            <h3>Security Code: </h3><input type="text" placeholder="CVV Code" class="cardnum" />
+                        </div>
+                    </div>
+                    <button type="button" class="proceed" onclick="f(), location.href='pg2Home.html'">Place and order</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
